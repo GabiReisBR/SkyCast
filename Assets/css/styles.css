@@ -1,0 +1,169 @@
+/* Configurações Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: #ffffff;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Container Principal */
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #d1d1d1;
+  }
+  
+  /* Busca */
+  .search {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input::placeholder {
+    color: #d1d1d1;
+  }
+  
+  input:focus {
+    border: 1px solid #00d1ff;
+    box-shadow: 0 0 10px rgba(0, 209, 255, 0.5);
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    background: #0078ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 120, 255, 0.5);
+  }
+  
+  button:hover {
+    background: #0056cc;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    transform: translateY(2px);
+  }
+  
+  /* Botão de Localização */
+  .localizacao button {
+    background: #00aaff;
+  }
+  
+  .localizacao button:hover {
+    background: #0088cc;
+  }
+  
+  /* Spinner (Carregamento) */
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Informações do Clima */
+  #infoClima {
+    margin-top: 30px;
+  }
+  
+  #infoClima h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  #infoClima img {
+    margin-top: 15px;
+    width: 100px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Rodapé */
+  footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #cfcfcf;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  

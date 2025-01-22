@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyCast - Previsão do Tempo</title>
+  
+  <!-- Fonte do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Ícones (Font Awesome) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+      <h1>SkyCast</h1>
+      <p>Veja a previsão do tempo em tempo real!</p>
+    </header>
+    
+    <!-- Conteúdo Principal -->
+    <main>
+      <!-- Campo de Busca -->
+      <div class="search">
+        <input type="text" id="cidade" placeholder="Digite o nome da cidade">
+        <button id="buscar">Buscar</button>
+      </div>
+
+      <!-- Botão para Localização -->
+      <div class="localizacao">
+        <button id="localizacaoBtn">
+          <i class="fas fa-map-marker-alt"></i> Usar Minha Localização
+        </button>
+      </div>
+
+      <!-- Indicador de Carregamento -->
+      <div id="loading" class="hidden">
+        <div class="spinner"></div>
+      </div>
+
+      <!-- Informações do Clima -->
+      <div id="infoClima" class="hidden">
+        <h2 id="nomeCidade"></h2>
+        <p id="temperatura"></p>
+        <p id="descricao"></p>
+        <p id="sensacaoTermica"></p>
+        <p id="umidade"></p>
+        <p id="vento"></p>
+        <p id="nascerPorDoSol"></p>
+        <img id="iconeClima" alt="Ícone do Clima">
+      </div>
+
+      <!-- Mensagem de Erro -->
+      <div id="erro" class="hidden"></div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+      <p>Desenvolvido por Gabriella Reis © 2025</p>
+    </footer>
+  </div>
+  
+  <!-- Script Principal -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
